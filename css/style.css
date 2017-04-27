@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+
+body,
+html,
+div.board,
+div#react-container {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div.board {
+    background-color: brown;
+    width: 100%;
+    background: #fff;
+}
+
+div.note {
+    height: 150px;
+    width: 150px;
+    background-color: yellow;
+    margin: 2px 0;
+    position: absolute;
+    cursor: -webkit-grab;
+    -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
+    color: #fff;
+}
+
+div.note:active {
+    cursor: -webkit-grabbing;
+}
+
+div.note p {
+    font-size: 22px;
+    padding: 5px;
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+div.note:hover > span {
+    opacity: 1;
+}
+
+div.note > span {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    opacity: 0;
+    transition: opacity .25s linear;
+}
+
+div.note button {
+    margin: 2px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+}
+
+div.note > textarea {
+    height: 70%;
+    background: rgba(255, 255, 255, .5);
+    color:#fff;
+}
+.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:focus {
+    background-color: #009688;
+    border-color: #009688;
+}
+.btn-danger, .btn-danger:hover, .btn-danger:active, .btn-danger:focus {
+    background-color: #F44336;
+    border-color: #F44336
+}
+.glyphicon-plus {
+    position: fixed;
+    top: auto;
+    right: 50px;
+    bottom: 50px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #E91E63;
+    border-color: #E91E63;
+    outline: none;
+}
+.glyphicon-plus:hover, .glyphicon-plus:focus, .glyphicon-plus:active {
+    background: #E91E63;
+    border-color: #E91E63;
+    outline: none;
+}
